@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Dalen21_Assets
+ * Class Bituitus_Assets
  */
-final class Dalen21_Assets
+final class Bituitus_Assets
 {
     /**
      * The Constructor
@@ -23,7 +23,7 @@ final class Dalen21_Assets
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Dalen21_Assets();
+            $instance = new Bituitus_Assets();
         }
 
         return $instance;
@@ -45,7 +45,7 @@ final class Dalen21_Assets
     {
         $open_sans   = 'Open+Sans:300,400,600,700';
         $droid_serif = 'Droid+Serif:400,700,400italic,700italic';
-        wp_enqueue_style( 'dalen21-fonts', "//fonts.googleapis.com/css?family={$open_sans}|{$droid_serif}" );
+        wp_enqueue_style( 'bituitus-fonts', "//fonts.googleapis.com/css?family={$open_sans}|{$droid_serif}" );
     }
 
     /**
@@ -53,8 +53,8 @@ final class Dalen21_Assets
      */
     function styles()
     {
-        $this->enqueue_style( 'dalen21-normalize', 'normalize.css' );
-        $this->enqueue_style( 'dalen21-base', 'base.css', array( 'dalen21-normalize' ) );
+        $this->enqueue_style( 'bituitus-normalize', 'normalize.css' );
+        $this->enqueue_style( 'bituitus-base', 'base.css', array( 'bituitus-normalize' ) );
     }
 
     /**

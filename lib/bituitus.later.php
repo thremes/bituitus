@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Dalen21_Later
+ * Class Bituitus_Later
  */
-final class Dalen21_Later
+final class Bituitus_Later
 {
     /**
      * The Constructor
@@ -20,7 +20,7 @@ final class Dalen21_Later
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Dalen21_Later();
+            $instance = new Bituitus_Later();
         }
 
         return $instance;

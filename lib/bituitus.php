@@ -1,33 +1,28 @@
 <?php
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Dalen21 Theme' );
-define( 'CHILD_THEME_URL', 'https://github.com/trsenna/dalen21' );
+define( 'CHILD_THEME_NAME', 'Bituitus Theme' );
+define( 'CHILD_THEME_URL', 'https://github.com/thremes/bituitus' );
 
 //* Load main functionality
-add_action( 'genesis_setup', array( 'Dalen21_Main', 'get_instance' ) );
+add_action( 'genesis_setup', array( 'Bituitus_Main', 'get_instance' ) );
 
 //* Load cleanup functionality
-require_once( 'dalen21.cleanup.php' );
-add_action( 'genesis_setup', array( 'Dalen21_Cleanup', 'get_instance' ), 15 );
+require_once( 'bituitus.cleanup.php' );
+add_action( 'genesis_setup', array( 'Bituitus_Cleanup', 'get_instance' ), 15 );
 
 //* Load later functionality
-require_once( 'dalen21.later.php' );
-add_action( 'genesis_setup', array( 'Dalen21_Later', 'get_instance' ), 15 );
+require_once( 'bituitus.later.php' );
+add_action( 'genesis_setup', array( 'Bituitus_Later', 'get_instance' ), 15 );
 
 //* Load assets functionality
 require_once( 'assets/assets.php' );
-add_action( 'genesis_setup', array( 'Dalen21_Assets', 'get_instance' ) );
-
-//* Load shortcode/clip infrastructure
-//require_once( 'classes/clip.php' );
-//require_once( 'shortcodes/shortcodes.php' );
-//new Dalen21_Shortcodes( new Dalen21_Clip_Shortcodes() );
+add_action( 'genesis_setup', array( 'Bituitus_Assets', 'get_instance' ) );
 
 /**
- * Class Dalen21_Main
+ * Class Bituitus_Main
  */
-final class Dalen21_Main
+final class Bituitus_Main
 {
     /**
      * The Constructor
@@ -57,7 +52,7 @@ final class Dalen21_Main
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Dalen21_Main();
+            $instance = new Bituitus_Main();
         }
 
         return $instance;

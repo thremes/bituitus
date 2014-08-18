@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Class Dalen21_Cleanup
+ * Class Bituitus_Cleanup
  */
-final class Dalen21_Cleanup
+final class Bituitus_Cleanup
 {
     /**
      * The Constructor
@@ -26,7 +26,7 @@ final class Dalen21_Cleanup
     {
         static $instance;
         if ( !isset( $instance ) ) {
-            $instance = new Dalen21_Cleanup();
+            $instance = new Bituitus_Cleanup();
         }
 
         return $instance;
