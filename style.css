@@ -16,6 +16,214 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
 body {
     text-rendering: optimizeLegibility;
+}
+
+/* # Only Screen ≥ 568px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 35.5em) {
+
+    /* ## Defaults
+    --------------------------------------------- */
+    body {
+
+    }
+}
+
+/* # Only Screen ≥ 768px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 48em) {
+
+    /* ## Defaults
+    --------------------------------------------- */
+    body {
+        background: #F5F5F5 url("http://www.buzzblog.hercules-design.com/wp-content/themes/BUZZBLOG-theme/images/patterns/pattern1.png");
+        font-size: 18px;
+    }
+
+    .site-header,
+    .nav-primary,
+    .archive-description,
+    .author-box,
+    .entry,
+    .entry-comments,
+    .entry-pings,
+    .comment-respond,
+    .sidebar .widget,
+    .footer-widgets {
+        background: #FFF;
+    }
+
+    .site-header .wrap,
+    .nav-primary .wrap,
+    .sidebar .widget,
+    .footer-widgets {
+        border: none;
+    }
+
+    .nav-primary .wrap {
+        border-top: 1px solid #EEE;
+    }
+
+    .archive-description,
+    .author-box,
+    .entry,
+    .entry-comments,
+    .entry-pings,
+    .comment-respond,
+    .sidebar .widget {
+        -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .featured-content .entry,
+    .entry-comments .comment-respond {
+        box-shadow: none;
+    }
+
+    .archive-pagination li a {
+        background: #FFF;
+        opacity: 0.85;
+    }
+
+    /* ## Common Classes
+    --------------------------------------------- */
+    .archive-description,
+    .author-box {
+        border: 1px solid #EEE;
+        padding: 40px;
+    }
+
+    /* ## Entries
+    --------------------------------------------- */
+    .entry {
+        margin-bottom: 40px;
+        padding: 50px 60px;
+    }
+
+    /* ## Comments
+    --------------------------------------------- */
+    .entry-comments {
+        padding: 40px;
+    }
+
+    .entry-pings,
+    .comment-respond {
+        padding: 40px 40px 16px;
+    }
+
+    .entry-comments .comment-respond {
+        padding: 0;
+    }
+
+}
+
+/* # Only Screen ≥ 1024px
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 64em) {
+
+    /* ## Site Containers
+    --------------------------------------------- */
+    .site-inner,
+    .wrap {
+        margin: 0 auto;
+        max-width: 960px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* ## Column Widths and Positions
+    --------------------------------------------- */
+    /* ### Content */
+    .content {
+        float: right;
+        width: 620px;
+    }
+
+    .content-sidebar .content {
+        float: left
+    }
+
+    .full-width-content .content {
+        width: 100%
+    }
+
+    /* ### Primary Sidebar */
+    .sidebar-primary {
+        float: right;
+        width: 300px;
+    }
+
+    .sidebar-content .sidebar-primary {
+        float: left
+    }
+
+    /* ## Footer Widgets
+    --------------------------------------------- */
+    .footer-widgets-1,
+    .footer-widgets-2,
+    .footer-widgets-3 {
+        width: 300px
+    }
+
+    .footer-widgets-1 {
+        margin-right: 30px
+    }
+
+    .footer-widgets-1,
+    .footer-widgets-2 {
+        float: left
+    }
+
+    .footer-widgets-3 {
+        float: right
+    }
+}
+
+/* # Only Screen ≥ 1280px
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 80em) {
+
+    /* ## Site Containers
+    --------------------------------------------- */
+    .site-inner,
+    .wrap {
+        max-width: 1200px
+    }
+
+    /* ## Column Widths and Positions
+    --------------------------------------------- */
+    .content-sidebar-sidebar .content-sidebar-wrap,
+    .sidebar-content-sidebar .content-sidebar-wrap,
+    .sidebar-sidebar-content .content-sidebar-wrap {
+        width: 980px
+    }
+
+    .content {
+        width: 800px
+    }
+
+    .sidebar-primary {
+        width: 360px
+    }
+
+    /* ## Footer Widgets
+    --------------------------------------------- */
+    .footer-widgets-1,
+    .footer-widgets-2,
+    .footer-widgets-3 {
+        width: 340px
+    }
+
+    .footer-widgets-1 {
+        margin-right: 60px
+    }
 }

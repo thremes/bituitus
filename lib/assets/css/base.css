@@ -596,20 +596,34 @@ img.alignright,
 /* ## Featured Content
 --------------------------------------------- */
 
-/*.featured-content .entry { border-bottom: 2px solid #E3E3E3; margin-bottom: 20px; padding: 0 0 24px; }*/
-/*.featured-content .entry-title { font-size: 20px }*/
-/*.sidebar .featured-content .entry-meta, .footer-widgets .featured-content .entry-meta { margin-bottom: 10px }*/
-/*.sidebar .featured-content article:last-child { margin-bottom: 0 }*/
+.featured-content .entry {
+    border-bottom: 1px dashed #E9E9E9;
+    margin-bottom: 20px;
+    padding: 0 0 24px;
+}
+
+.featured-content .entry-title {
+    font-size: 20px
+}
+
+.sidebar .featured-content .entry-meta,
+.footer-widgets .featured-content .entry-meta {
+    margin-bottom: 10px
+}
+
+.sidebar .featured-content article:last-child {
+    margin-bottom: 0
+}
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-    border-bottom: 1px solid #EEE;
     text-align: center;
 }
 
 .site-header .wrap {
+    border-bottom: 1px solid #EEE;
     padding: 20px 5%
 }
 
@@ -726,6 +740,9 @@ img.alignright,
 
 .nav-primary {
     text-transform: uppercase;
+}
+
+.nav-primary .wrap {
     border-bottom: 1px solid #EEE
 }
 
@@ -920,7 +937,7 @@ li.comment li.comment {
 }
 
 .comment-content ul > li {
-    list-style-type: disc
+    list-style-type: circle;
 }
 
 .comment-content ol ol,
