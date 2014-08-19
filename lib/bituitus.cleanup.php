@@ -11,6 +11,7 @@ final class Bituitus_Cleanup
     private function __construct()
     {
         //* Unregister secondary sidebar
+        unregister_sidebar( 'header-right' );
         unregister_sidebar( 'sidebar-alt' );
 
         //* Unregister not needed layouts
