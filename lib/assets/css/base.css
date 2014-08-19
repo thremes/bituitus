@@ -501,6 +501,7 @@ th {
 .widget-title {
     font-size: 18px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 /* ## WordPress
